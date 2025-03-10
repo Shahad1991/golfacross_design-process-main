@@ -1,0 +1,291 @@
+/*variabler*/
+:root{
+  --background1: #0C3220;
+  --background2: #769D84;
+  --action: #C3D884;
+  --card: #eceaea;
+  --text: #151824;
+}
+/*variabler*/
+
+*{
+  color: #151824;
+  font-family: 'Merriweather Sans';
+}
+
+body{
+  margin:0;
+}
+
+/*overtekst til medlemskaber Emil*/
+.head-member{
+  background-color: #0C3220;
+  height: 105px;
+  margin-bottom: 61px;
+  width: 100%;
+}
+
+.head-member h2{
+  color: white;
+  padding-top: 29px;
+  font-size: 32px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+/*overtekst til medlemskaber Emil*/
+
+
+/*Medlemskabes kort Emil*/
+.cards .container{
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 300;
+
+}
+
+.card-head{
+  background-color: var(--action);
+  width: 327px;
+  height: 61px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+
+.member h3{
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 0;
+  padding: 18px 0 0 15px ;
+
+}
+
+.member li{
+  font-size: 16px;
+  font-weight: 300;
+  padding: 7px 0 7px 0;
+}
+
+.member p{
+  text-align: right;
+  font-weight: 700;
+  padding-right: 20px;
+}
+
+.member{
+  background-color: #eceaea;
+  margin: 15px auto;
+  
+}
+
+.cards img{
+  display: block;
+  margin-top: 61px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  max-width: 1120px;
+}
+/*Medlemskabes kort Emil*/
+
+/*footer Emil*/
+.foot{
+  margin-top: 87px;
+  width: 100%;
+  height: 147px;
+  background-color: var(--background1);
+  bottom: 0;
+}
+
+.foot p{
+  font-size: 14px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0 0 14px 0;
+}
+
+.foot-container{
+  padding-top: 28px;
+}
+
+.foot-mail{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.fa-envelope{
+  margin: 0 10px 0 0;
+}
+
+.foot-phone{
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-phone{
+  margin: 0 10px 0 0;
+}
+
+.fa{
+  font-size: 17px;
+  color: var(--action); 
+}
+
+/*Facebook, Twitter og Instagram*/ 
+.social{
+  background-color: #C3D884;
+  width: 36px;
+  height: 36px;
+  border-radius: 7px;
+}
+
+.fa-facebook{
+  color: var(--background1);
+  font-size: 24px;
+  padding: 6px 0 0 11px;
+  margin: 0; 
+}
+
+.fa-twitter{
+  color: var(--background1);
+  font-size: 24px;
+  padding:6px 0 0 7px;
+  margin: 0; 
+}
+
+.fa-instagram{
+  color: var(--background1);
+  font-size: 24px;
+  padding: 6px 0 0 8px;
+  margin: 0; 
+}
+
+.social-container{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.social{
+  margin: 0 20px;
+}
+/*Facebook, Twitter og Instagram*/ 
+/*footer Emil*/
+
+
+/*opret bruger Emil*/
+.bruger{
+  display: flex;
+  align-items: center;
+  margin-top: 108px;
+  background-color: var(--background2);
+  height: 438px;
+  width: 100%;
+}
+
+.box{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--card);
+  height: 328px;
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+
+.opret-bruger{
+  margin-top: 35px;
+  text-align: center;
+}
+
+.opret-bruger h3{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.text{
+  font-weight: 300;
+  font-size: 14px;
+  padding: 5px;
+
+}
+
+.knap{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  background-color: #C3D884;
+  width: 153px;
+  height: 32px;
+}
+
+.enter{
+  padding-top: 4px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.login{
+  margin-top: 43px;
+  padding-top: 4px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.felt{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  height: 32px;
+  margin-top: 10px;
+  width:165px;
+  display: block;
+  border: none;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+
+a{
+  text-decoration: none;
+}
+
+.knap:hover{
+  opacity: 0.7;
+}
+/*opret bruger Emil*/
+
+/*Media modify Emil*/
+@media(max-width:1010px){
+  .cards .container{
+    flex-direction: column;   
+  }
+
+  .bruger{
+    height: 810px;
+  }
+  
+  .box{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 327px;
+  }
+
+  .opret-bruger{
+    margin-top: 0;
+  } 
+}
+/*Media modify Emil*/
+
+
+

@@ -1,0 +1,94 @@
+/*kode start: Zahraa*/
+
+/*font overført*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap');
+body{
+background-color:  #FBFCF2;
+margin: 0;
+}
+
+/*overskrift*/
+h1{
+    text-align: center; 
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+/*indledene box*/
+.top-section p{
+    text-align: center;
+    background-color: rgba(224, 226, 205, 1); 
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 25px;
+
+    
+}
+
+/*flex box på alle images*/
+.container img {
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 100%
+  }
+
+  .website{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Merriweather Sans', sans-serif;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  
+  
+  .image {
+    flex-basis: 40%
+  }
+  
+  .text p{
+    font-size: 15px;
+    padding: 50px;
+    background-color: rgba(224, 226, 205, 1);
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 30px;
+    line-height: 25px;
+    width: 150px;
+    height: 150px;
+
+  }
+
+
+/*mobil version*/
+@media (min-width:768px){
+    .container{
+        flex-direction: column;
+    }
+    .website{
+        flex-direction: row;
+    }
+}
+
+/*kode slut: Zahraa*/
+
+
+
+
+
+
+

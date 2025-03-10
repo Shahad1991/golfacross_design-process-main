@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap');
+body{
+background-color:#FBFCF2;
+margin: 0px;
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+.checked {
+    color: orange;
+    padding-top: 1px;
+   
+    margin-top: 22px;
+    
+
+    
+}
+
+.item-3 {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin-left: 70px;
+    margin: top 2px;
+    
+    
+}
+
+
+
+.item-2{
+    margin-left: 70px;
+  
+    
+    
+   
+
+    
+   
+    
+}
+
+.image-text {
+    display: flex;
+    flex-direction: row;
+    
+}
+.image-text h3{
+    padding-right: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+    
+
+h6 {
+    margin-left: 10px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+ 
+  
+
+.flexbox-container-1{
+    display:flex;
+    flex-direction: column;
+    
+    
+}
+
+
+
+.flexbox-container-1 p{
+    background-color: #E0E2CD;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 850px;
+    font-size: 15px;
+    width: 250px;
+    font-family: 'Merriweather Sans', sans-serif;
+   
+}
+
+
+.flexbox-container-2 p{
+    background-color: #E0E2CD;
+    border-radius: 20px;
+    padding: 20px;
+    margin-right: 200px;
+    font-size: 15px;
+    width: 200px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+
+
+.flexbox-container-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+   
+}  
+
+
+.flexbox-container-3 p{
+    background-color: #E0E2CD;
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    font-size: 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.flexbox-container-3{
+    display: flex;
+    flex-direction:column;
+    justify-content:flex-start ;
+    margin-top: 20px;
+    
+
+}
+
+
+.circle {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    background:#0C2E1E;
+    border: none;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+    color:  #E0E2CD;
+    font-family: 'Merriweather Sans', sans-serif;
+   
+    
+    
+}
+
+
+.flexbox-container{
+   
+   margin-left: 30px; 
+   margin-top: 50px;
+   margin-bottom: 300px;
+   
+   
+}
+
+.speciel{
+    color: gray;
+    padding-top: 1px;
+    margin-top: 22px;
+    
+}
+
+
+
+  
+.aside-1{
+    
+  float: right;
+  margin-right: 75px;
+  margin-top: 50px;
+
+   
+}
+
+
+.aside-2{
+    margin-top: 70px;
+    text-align: center;
+}
+
+
+ 
+@media only screen and (max-width: 600px) {
+    .aside-1{
+     display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .aside-2{
+        display: none;
+    }
+ }
+ 
+    
+    
+
+
+

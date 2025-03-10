@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om Os</title>
+  
+    <link rel="stylesheet" href="../styles/omos.css">
+
+<!-- Lisa favicon + nav css -->
+  
+<link rel="stylesheet" href="/styles/nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon_io-1/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_io-1/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_io-1/favicon-16x16.png">
+<link rel="manifest" href="/img/favicon_io-1/site.webmanifest">
+
+</head>
+<body>
+   
+<!-- Lisa navbar menu -->
+<nav class="navbar">
+    <a href="index.html" class="logo">
+        <img src="/img/home/logo.svg" alt="GolfAcross Logo" class="logo">
+    </a>
+
+    <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="/index.html">hjem</a></li>
+            <li><a href="/pages/omos.html">om os</a></li>
+            <li><a href="/pages/konto.html">konto</a></li>
+            <li><a href="/pages/anmendelser.html">anmendelser</a></li>
+        </ul>
+
+        <div class="dropdown">
+            <button class="lang-btn">
+                <img src="/img/home/dansk-f.svg" alt="dansk flag">
+                <img src="/img/home/icon-arrow-down.svg" alt="arrow down">
+            </button>
+            <div class="dropdown-content">
+                <div class="da">
+                    <a href="#"><img src="/img/home/dansk-f.svg" alt="dansk flag">
+                        <p>DA</p>
+                    </a>
+                </div>
+                <div class="en">
+                    <a href="#"><img src="/img/home/engelsk-f.svg" alt="engelsk flag">
+                        <p>EN</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Lisa navbar menu end -->
+
+<!-- kode start: Zahraa -->
+
+<!-- overskrift-->
+<h1>Om os</h1>
+
+
+<!-- indledene textboks-->
+<section class="top-section">
+    <p> <b>Hvem er vi? </b>
+        <br>
+        <br>
+    Vi er en app, GolfAcross, som kan hjælpe <b>dig</b> med at få den bedste oplevelse med <b>din</b> golf, 
+    <b>dine</b> venner og <b>din</b> klub!</p>
+</section> 
+
+<section class="website">
+
+
+<!-- billeder og text lavet med en div class containor-->
+  <div class="container">
+    <div class="image">
+      <img src="../img/omos/billede1.jpg" alt="golf" width="100%">
+    </div>
+    <div class="text">
+      <p>GolfAcross startede med at være en simpel drøm hos en dedikeret golf spiller som i 2008 blev til virkelighed.</p>
+    </div>
+  </div>
+    
+  <div class="container">
+    <div class="image">
+      <img src="../img/omos/billede2.jpg" alt="golf" width="100%">
+    </div>
+    <div class="text">
+      <p>Her skabte to gode partner en virksomhed, som siden da er blevet arbejdet på. </p>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="image">
+      <img src="../img/omos/billede3.jpg" alt="golf" width="100%">
+    </div>
+    <div class="text">
+      <p>I dag har vi en færdigudviklet golf virksomhed som er klar til din service! </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Kode slut: Zahraa -->
+
+ <!--Footer Emil-->
+ <footer class="foot">
+    <div class="foot-container">
+
+        <div class="social-container">
+            <div class="social">
+                <a href="https://www.facebook.com/golfacross" target="_blank"><i class="fa fa-facebook"></a></i>
+            </div>
+
+            <div class="social">
+                <a href="https://twitter.com/GolfAcross" target="_blank"><i class="fa fa-twitter"></a></i>
+            </div>
+
+            <div class="social">
+                <a href="https://www.instagram.com/golfacross" target="_blank"><i class="fa fa-instagram"></a></i>
+            </div>
+        </div>
+
+        <div class="foot-mail">
+            <i class="fa fa-envelope"></i>
+            <p>support@golfacross.com</p>
+        </div>
+
+        <div class="foot-phone">
+            <i class="fa fa-phone"></i>
+            <p>+ 45 28 56 49 35</p>
+        </div>
+    </div>
+</footer>
+<!--Footer Emil-->
+
+<!-- Lisa javascript for hamburger menu -->
+<script>
+//Two variables - taking in the class and id from the html
+const menu = document.querySelector('#mobile-menu');
+const links = document.querySelector('.menu')
+// Display mobile menu
+const mobileMenu = () => {
+    menu.classList.toggle('is-active')
+    links.classList.toggle('active')
+}
+menu.addEventListener('click', mobileMenu)
+</script>
+
+
+
+</body>
+</html>

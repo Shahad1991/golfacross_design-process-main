@@ -1,0 +1,128 @@
+<!-- Jonathan made kontakt indehold -->
+
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    
+<link rel="stylesheet" href="/styles/konto.css">
+
+
+<!-- Lisa favicon + nav css -->
+<link rel="stylesheet" href="/styles/nav.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon_io-1/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon_io-1/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon_io-1/favicon-16x16.png">
+<link rel="manifest" href="/img/favicon_io-1/site.webmanifest">
+
+</head>
+
+<body>
+
+     <!-- Lisa code start -->
+   <!-- Lisa navbar menu -->
+   <nav class="navbar">
+    <a href="index.html" class="logo">
+        <img src="/img/home/logo.svg" alt="GolfAcross Logo" class="logo">
+    </a>
+
+    <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="/index.html">hjem</a></li>
+            <li><a href="/pages/omos.html">om os</a></li>
+            <li><a href="/pages/konto.html">konto</a></li>
+            <li><a href="/pages/anmendelser.html">anmendelser</a></li>
+        </ul>
+
+        <div class="dropdown">
+            <button class="lang-btn">
+                <img src="/img/home/dansk-f.svg" alt="dansk flag">
+                <img src="/img/home/icon-arrow-down.svg" alt="arrow down">
+            </button>
+            <div class="dropdown-content">
+                <div class="da">
+                    <a href="#"><img src="/img/home/dansk-f.svg" alt="dansk flag">
+                        <p>DA</p>
+                    </a>
+                </div>
+                <div class="en">
+                    <a href="#"><img src="/img/home/engelsk-f.svg" alt="engelsk flag">
+                        <p>EN</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Lisa navbar menu end -->
+
+
+<!-- jonathan -->
+    <div class="container">
+        <form action="">
+            <h1> Log på</h1>
+            <div class="form-group">
+                <label for="uname">Bruger navn:</label><br>
+                <input type="text" id="uname" name="uname"><br>
+                <label for="pword">Kodeord</label><br>
+                <input type="password" name="pword" id="pword"><br><br>
+                <!--/Jonathan/ Her laves teksten oven for boksen og boksen selv der kan tage imod inputs -->
+            </div>
+            <input type="button" value="Login" class="btn">
+        <!--/Jonathan/ Her laves knappen hvor man logger ind -->
+        </form>
+    </div>    
+
+     <!--Footer Emil-->
+     <footer class="foot">
+        <div class="foot-container">
+
+            <div class="social-container">
+                <div class="social">
+                    <a href="https://www.facebook.com/golfacross" target="_blank"><i class="fa fa-facebook"></a></i>
+                </div>
+
+                <div class="social">
+                    <a href="https://twitter.com/GolfAcross" target="_blank"><i class="fa fa-twitter"></a></i>
+                </div>
+
+                <div class="social">
+                    <a href="https://www.instagram.com/golfacross" target="_blank"><i class="fa fa-instagram"></a></i>
+                </div>
+            </div>
+
+            <div class="foot-mail">
+                <i class="fa fa-envelope"></i>
+                <p>support@golfacross.com</p>
+            </div>
+
+            <div class="foot-phone">
+                <i class="fa fa-phone"></i>
+                <p>+ 45 28 56 49 35</p>
+            </div>
+        </div>
+    </footer>
+    <!--Footer Emil-->
+    
+<!-- Lisa javascript for hamburger menu -->
+<script>
+    //Two variables - taking in the class and id from the html
+    const menu = document.querySelector('#mobile-menu');
+    const links = document.querySelector('.menu')
+    // Display mobile menu
+    const mobileMenu = () => {
+        menu.classList.toggle('is-active')
+        links.classList.toggle('active')
+    }
+    menu.addEventListener('click', mobileMenu)
+</script>
+</body>
+</html>
